@@ -1,0 +1,23 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
+html, button, input {
+  font-size: $font-size-desktop;
+
+  @media (max-width: $mobile-breakpoint) {
+      font-size: $font-size-mobile
+  }
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow-y: scroll;
+  font-family: Arial, sans-serif;
+  background: $color-bg;
+  color: $color-text
+}

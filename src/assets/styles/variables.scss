@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+$color-bg: #f9f9f9;
+$color-card: #ffffff;
+$color-border: #e0e0e0;
+$color-primary: #1976d2;
+$color-primary-hover: color.adjust($color-primary, $lightness: -10%);
+$color-text: #333333;
+$color-text-light: #757575;
+$color-error: red;
+
+$red-filter: brightness(0) saturate(100%) invert(17%) sepia(83%) saturate(5672%) hue-rotate(345deg) brightness(100%) contrast(106%);
+$color-primary-filter: brightness(0) saturate(100%) invert(33%) sepia(87%) saturate(3680%) hue-rotate(197deg) brightness(94%) contrast(80%);
+
+$radius: 8px;
+$spacing-unit: 0.5rem;
+
+$font-size-desktop: 16px;
+$font-size-mobile: 14px;
+
+$mobile-breakpoint: 768px;
